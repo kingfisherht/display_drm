@@ -4,3 +4,12 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/kingfisherht/drm.git
 git push -u origin master
+
+for drm begin:
+first we should install libdrm,how does we do it:
+    git clone https://github.com/grate-driver/libdrm.git
+    cd libdrm
+    sudo apt-get install meson
+    meson builddir/
+    ninja -C builddir/ install
+
