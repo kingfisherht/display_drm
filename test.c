@@ -92,14 +92,12 @@ int main(int argc, char **argv)
 		fb_drawrect(fbd, 0, fbd->yres*2/4, fbd->xres, fbd->yres/4,BLUE_COLOR565);
 		fb_drawrect(fbd, 0, fbd->yres*3/4, fbd->xres, fbd->yres/4,BLACK_COLOR);
 
-	}else if(fbd->bits_per_pixel == 16){
+	}else if(fbd->bits_per_pixel == 32){
 		 printf("Red/Green/Blue/Black Screen!\n");		// 输出屏幕将要显示的颜色
 		fb_drawrect(fbd, 0, 0, fbd->xres, fbd->yres/4, RED_COLOR565);	//屏幕颜色显示，将屏幕分割为4个
 		fb_drawrect(fbd, 0, fbd->yres/4, fbd->xres, fbd->yres/4,White_COLOR565);
 		fb_drawrect(fbd, 0, fbd->yres*2/4, fbd->xres, fbd->yres/4,BLUE_COLOR565);
 		fb_drawrect(fbd, 0, fbd->yres*3/4, fbd->xres, fbd->yres/4,BLACK_COLOR);
-
-
 	}
 	else{
 		printf("16 bits only!\n");
